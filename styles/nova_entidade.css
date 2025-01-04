@@ -1,0 +1,93 @@
+.action{
+    gap: 1rem;
+}
+
+.action-create-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+    gap: 1rem;
+}
+
+ .action-create-title img {
+    transform: scale(1.4);
+    margin-top: 1rem;
+}
+
+#form-cadastro-entidade {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+form div{
+    height: 25%;
+}
+
+.cadastro-container {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+}
+
+label {
+    font-family: "Roboto";
+    font-size: 1.5rem;
+}
+
+
+.cadastro-input,
+.cadastro-select {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    gap: .5rem;
+}
+
+
+input,
+select {
+    width: 90%;
+    height: 100%;
+    border-radius: 1rem;
+    border: 1px solid black;
+}
+
+
+
+.cadastro-ponto-coleta {
+    display: flex;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+ 
+#campo-atuacao{
+    appearance: none; /* Remove a aparência padrão do navegador */
+    -webkit-appearance: none; /* Compatibilidade com Safari */
+    -moz-appearance: none; /* Compatibilidade com Firefox */
+    background-image: url('../assets/img/down-arrow.png'); /* Caminho para sua imagem */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Ajuste conforme necessário */
+    background-size: 4rem;
+    cursor: pointer;
+}
+
+
+#add-img {
+    width: 3%;
+    cursor: pointer;
+}
+
+#btn-cadastrar {
+    font-size: 3rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    width: 86%;
+    height: 18%;
+} 
