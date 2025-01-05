@@ -37,7 +37,7 @@ main{
 
 .campos-entidades h2,a{
     font-size: 2rem;    
-    font-family: "Poppins";
+    font-family: var(--primary-font);
 }
 
 .btn-campos-entidades-cadastradas{
