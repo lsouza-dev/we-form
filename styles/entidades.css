@@ -38,6 +38,7 @@ main{
 .campos-entidades h2,a{
     font-size: 2rem;    
     font-family: var(--primary-font);
+    width: auto;
 }
 
 .btn-campos-entidades-cadastradas{
@@ -58,4 +59,65 @@ main{
 
 hr{
     width: 100%;
+}
+
+/* Responsividade para telas abaixo de desktop (até 1024px) */
+@media (max-width: 1024px) {
+    .action {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        padding: 1rem;
+    }
+    .entidades-cadastradas-container{
+        display: none;
+    }
+
+    #entidades-cadastradas-title{
+        font-size: 2rem;
+    }
+
+    .container-campos-entidades {
+        padding: 0 2rem;
+    }
+
+    .campos-entidades {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .campos-entidades h2, .campos-entidades a {
+        font-size: 1.5rem;
+        width: 100%;
+        margin: .35rem;
+    }
+
+    .btn-campos-entidades-cadastradas {
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
+
+/* Ajuste de título para telas menores */
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+    #entidades-cadastradas-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Pequenos dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+    #entidades-cadastradas-title {
+        font-size: 2rem;
+    }
+}
+
+/* Muito pequenos dispositivos móveis (até 320px) */
+@media (max-width: 320px) {
+    #entidades-cadastradas-title {
+        font-size: 1.5rem;
+    }
 }

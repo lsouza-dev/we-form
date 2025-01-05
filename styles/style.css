@@ -76,7 +76,7 @@ h1,h2{
     border: 1px solid rgba(0, 0, 0, 0.301);
     border-radius: 1rem;
 }
-#action-title{
+.action h2{
     font-size: 4rem;
     width: 80%;
 }
@@ -97,6 +97,7 @@ h1,h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 1.5rem 0;
     border-radius: 1rem;
     color: white;
@@ -119,6 +120,7 @@ h1,h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-family: var(--primary-font);
     font-weight: 500;
     font-size: 1.5rem;
@@ -130,3 +132,62 @@ h1,h2{
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582) ;
 }
 
+/* Tablets e abaixo (até 1024px) */
+@media (max-width: 1024px) {
+    .logo {
+        display: none;
+    }
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "action";
+        max-width: 90%; /* Usa uma largura mais apropriada para centralizar */
+        margin: 0 auto; /* Centraliza o main horizontalmente */
+        padding: 3rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; /* Ajusta a altura para conteúdo */
+    }
+    .action {
+        padding: 2rem;
+        width: 100%;
+        max-width: 700px; /* Limita a largura do conteúdo da ação */
+        box-sizing: border-box; /* Garante que padding não aumente o tamanho total */
+    }
+    .action h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Mobile devices (abaixo de 768px) */
+@media (max-width: 767px) {
+    main {
+        padding: 0.8rem;
+        max-width: 95%;
+        height: 100%;
+        margin: 0 auto; /* Centraliza o main horizontalmente */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .action {
+        padding: 1.5rem;
+        width: 100%;
+        max-width: 400px; /* Limita a largura do conteúdo da ação */
+        box-sizing: border-box;
+    }
+    .action h2 {
+        font-size: 2.3rem;
+    }
+    .action-btn {
+        font-size: 1.5rem;
+    }
+    .action-register {
+        font-size: 1.2rem;
+    }
+    .action-register a {
+        font-size: 1.4rem;
+    }
+}
